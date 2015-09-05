@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-       <!--<bean id="crawlController" name="crawlController" class="com.flea.crawler.controller.FleaMultiplerCrawlController"/>-->
-       <!--<bean id="appcontext" name="appcontext" class="com.flea.crawler.FleaApplicationContext"/>-->
-       <!--<bean id="fleaLanguageDetector" name="fleaLanguageDetector" class="com.flea.crawler.language.FleaLanguageDetectorImpl"/>-->
-       <bean id="fleaIndexer" name="fleaIndexer" class="com.flea.database.indexer.ElasticIndexer"/>
-       <bean id="fleaSearcher" name="fleaSearcher" class="com.flea.search.searcher.ElasticSearcher"/>
-       <bean id="fleaGraphDBManager" name="fleaGraphDBManager" class="com.flea.database.graph.FleaOrientDBManager"/>
+    <!--<bean id="crawlController" name="crawlController" class="com.flea.crawler.controller.FleaMultiplerCrawlController"/>-->
+    <!--<bean id="appcontext" name="appcontext" class="com.flea.crawler.FleaApplicationContext"/>-->
+    <!--<bean id="fleaLanguageDetector" name="fleaLanguageDetector" class="com.flea.crawler.language.FleaLanguageDetectorImpl"/>-->
+    <bean id="fleaIndexer" name="fleaIndexer" class="com.flea.database.indexer.ElasticIndexer"/>
+    <bean id="fleaSearcher" name="fleaSearcher" class="com.flea.search.searcher.ElasticSearcher"/>
+    <bean id="fleaGraphDBManager" name="fleaGraphDBManager" class="com.flea.database.graph.FleaOrientDBManager"/>
 </beans>
